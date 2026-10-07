@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About - Portfolio</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="about-page">
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                <i class='bx bx-user'></i>
+            </div>
+
+            <h1>About Me</h1>
+
+            <div class="about-text">
+                <p>
+                    Hello, I am <span>Parikshit Kumar</span>.
+                </p>
+
+                <p>
+                    I am a Full Stack Developer and CSE Data Science student.
+                </p>
+
+                <p>
+                    I enjoy creating websites, developing web applications
+                    and learning new technologies.
+                </p>
+            </div>
+
+
+            <div class="about-skills">
+
+                <div class="about-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Development</h3>
+                    <p>Full Stack Development</p>
+                </div>
+
+                <div class="about-box">
+                    <i class='bx bx-data'></i>
+                    <h3>Data Science</h3>
+                    <p>Python & Machine Learning</p>
+                </div>
+
+                <div class="about-box">
+                    <i class='bx bx-brain'></i>
+                    <h3>Learning</h3>
+                    <p>Always Learning New Things</p>
+                </div>
+
+            </div>
+
+
+            <a href="index.html" class="back-home">
+                <i class='bx bx-home'></i>
+                Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        let paragraphs = document.querySelectorAll(".about-text p");
+
+
+        paragraphs.forEach(function (paragraph, index) {
+
+            let text = paragraph.innerText;
+            let words = text.split(" ");
+            paragraph.innerHTML = "";
+
+            words.forEach(function (word, wordIndex) {
+
+                let span = document.createElement("span");
+
+                span.innerText = word + " "
+                span.classList.add("word");
+
+                span.style.animationDelay =
+                    (index * 1.5 + wordIndex * 0.15) + "s";
+
+                paragraph.appendChild(span);
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

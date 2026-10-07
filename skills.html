@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skills - Portfolio</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="skills-page">
+
+        <div class="skills-card">
+
+            <div class="skills-icon">
+                <i class='bx bx-code-alt'></i>
+            </div>
+
+            <h1>My Skills</h1>
+
+            <p class="skills-intro">
+                These are the technologies and skills I am learning and working with.
+            </p>
+
+
+            <div class="skills-container">
+
+                <!-- C++ -->
+                <div class="skill-box">
+
+                    <i class='bx bxl-c-plus-plus skill-icon'></i>
+
+                    <h3>C++</h3>
+                    <p>Programming & DSA</p>
+
+                    <div class="skill-meter">
+                        <div class="meter">
+                            <div class="meter-fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- JavaScript -->
+                <div class="skill-box">
+
+                    <i class='bx bxl-javascript skill-icon'></i>
+
+                    <h3>JavaScript</h3>
+                    <p>Web Development</p>
+
+                    <div class="skill-meter">
+                        <div class="meter">
+                            <div class="meter-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- HTML -->
+                <div class="skill-box">
+
+                    <i class='bx bxl-html5 skill-icon'></i>
+
+                    <h3>HTML</h3>
+                    <p>Web Structure</p>
+
+                    <div class="skill-meter">
+                        <div class="meter">
+                            <div class="meter-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- CSS -->
+                <div class="skill-box">
+
+                    <i class='bx bxl-css3 skill-icon'></i>
+
+                    <h3>CSS</h3>
+                    <p>Web Styling</p>
+
+                    <div class="skill-meter">
+                        <div class="meter">
+                            <div class="meter-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- React -->
+                <div class="skill-box">
+
+                    <i class='bx bxl-react skill-icon'></i>
+
+                    <h3>React</h3>
+                    <p>Frontend Development</p>
+
+                    <div class="skill-meter">
+                        <div class="meter">
+                            <div class="meter-fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Node.js -->
+                <div class="skill-box">
+
+                    <i class='bx bxl-nodejs skill-icon'></i>
+
+                    <h3>Node.js</h3>
+                    <p>Backend Development</p>
+
+                    <div class="skill-meter">
+                        <div class="meter">
+                            <div class="meter-fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Express.js -->
+                <div class="skill-box">
+
+                    <i class='bx bx-server skill-icon'></i>
+
+                    <h3>Express.js</h3>
+                    <p>Backend Framework</p>
+
+                    <div class="skill-meter">
+                        <div class="meter">
+                            <div class="meter-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- MongoDB -->
+                <div class="skill-box">
+
+                    <i class='bx bx-data skill-icon'></i>
+
+                    <h3>MongoDB</h3>
+                    <p>Database</p>
+
+                    <div class="skill-meter">
+                        <div class="meter">
+                            <div class="meter-fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- SQL -->
+                <div class="skill-box">
+
+                    <i class='bx bx-table skill-icon'></i>
+
+                    <h3>SQL</h3>
+                    <p>Database Management</p>
+
+                    <div class="skill-meter">
+                        <div class="meter">
+                            <div class="meter-fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a href="index.html" class="back-home">
+                <i class='bx bx-home'></i>
+                Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        let icons = document.querySelectorAll(".skill-icon");
+
+        icons.forEach(function(icon) {
+
+            icon.addEventListener("click", function() {
+
+                let skillBox = icon.parentElement;
+
+                skillBox.classList.toggle("active");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+```
